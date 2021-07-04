@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanessa Leme - Hair Stylist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-page">
+    <header>
+
+        <nav class="menu-header">
+            <div class="menu-sandwich">
+                <input id="menu-sandwich-check" type="checkbox">
+                <label for="menu-sandwich-check">
+                    <div class="menu-sandwich-bt"></div>
+                </label>
+                <div class="menu-sandwich-active">
+                    <ul>
+                        <li><a href="#">produtos</a></li>
+                        <li><a href="#">agendar cabeleireira</a></li>
+                        <li><a href="#">meu perfil</a></li>
+                        <li><a href="#">contato</a></li>
+                        <li><a href="#">ajuda</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="logo">
+                <a href="#">
+                    <img src="./images/logotipo-vanhair.svg" width="90px" alt="logotipo vanessa leme">
+                    <img class="logo-name" src="./images/logo-nome-vanessaleme.svg" alt="vanessa leme hair stylist">
+                </a>
+            </div>
+
+            <div class="menu-rigth">
+                <ul>
+                    <li>
+                        <a href="#"><img src="./images/iconmonstr-shopping-bag-17.svg" alt="loja de produtos kerastase">
+                            <span>produtos</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/iconmonstr-user-10.svg" alt="meu perfil">
+                            <span>meu perfil</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/iconmonstr-calendar-4.svg" alt="agendar salao">
+                            <span>agendar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="container" id="question_0">
+            <div class="apoio">
+                <img src="./images/apoio-logotipo-kerastase.svg" alt="apoio kerastase">
+            </div>
+
+            <div class="box-description">
+                <div class="box-description-left">
+                    <h1>Qual perfil do seu cabelo?</h1>
+                    <p>Vou te ajudar a encontrar os produtos ideais para o seu tipo de cabelo!</p>
+                    <div class="box-description-risk-1"></div>
+                </div>
+
+                <div class="box-description-rigth">
+                    <h1>Vamos criar o seu perfil?</h1>
+                    <p>Inicie online nosso processo simples de 5 etapas e identifique seu perfil de cabelo.</p>
+                    <div class="box-description-risk-2"></div>
+                </div>
+            </div>
+
+            <div class="box-button">
+                <button id="submit0">Ok, Vamos lá!</button>
+                <a href="#">ou ir para Produtos</a>
+            </div>
+        </section>
+
+        <form action="" id="questions"></form>
+
+            <section class="container" id="question_1">
+                <div class="questions one">
+                    <h2>
+                        1. O meu cabelo é!
+                        <div class="box-description-risk-2"></div>
+                    </h2>
+                    <p>Selecione uma das opções, em seguida clique em Avançar.</p>
+
+                    <label class="container-check" for="question-1a">
+                        <img src="./images/tipo-de-cabelo-crespo-vanhair.svg" alt="Cabelo Crespo">
+                        <input type="radio" id="question-1a" name="tipo de cabelo">
+                        <span class="check"></span>
+                        Crespo
+                    </label>
+
+                    <label class="container-check" for="question-2">
+                        <img src="./images/tipo-de-cabelo-enrolado-vanhair.svg" alt="Cabelo Cacheado">
+                        <input type="radio" id="question-2" name="tipo de cabelo">
+                        <span class="check"></span>
+                        Cacheado
+                    </label>
+
+                    <label class="container-check" for="question-3">
+                        <img src="./images/tipo-de-cabelo-ondulado-vanhair.svg" alt="Cabelo Ondulado">
+                        <input type="radio" id="question-3"  name="tipo de cabelo">
+                        <span class="check"></span>
+                        Ondulado
+                    </label>
+
+                    <label class="container-check" for="question-4">
+                        <img src="./images/tipo-de-cabelo-liso-vanhair.svg" alt="Cabelo Liso">
+                        <input type="radio" id="question-4"  name="tipo de cabelo">
+                        <span class="check"></span>
+                        Liso
+                    </label>
+                </div>
+
+                <div class="box-button">
+                    <button id="submit1">1/4 ---- Avançar</button>
+                </div>
+
+            </section>
+
+            <section class="container" id="question_2">
+                <div class="questions two">
+                    <h2>2. Quantas vezes por semana voce lava/seca o cabelo?
+                        <div class="box-description-risk-2"></div>
+                    </h2>
+                    <p>Selecione uma opção de lavagem.</p>
+
+                    <div class="wash-hair">
+                        <span>Lava</span>
+                        <img src="./images/shower-lavar-vanessa-leme.svg" alt="lava cabelo">
+                    </div>
+
+                    <label class="text-check" for="question-5">
+                        <input type="radio" id="question-5" name="lava cabelo">
+                        Menos de 3 vezes por semana
+                        <span class="checking"></span>
+                    </label>
+
+                    <label class="text-check" for="question-6">
+                        <input type="radio" id="question-6" name="lava cabelo">
+                        3 vezes por semana
+                        <span class="checking"></span>
+                    </label>
+
+                    <label class="text-check" for="question-7">
+                        <input type="radio" id="question-7" name="lava cabelo">
+                        <span class="checking"></span>
+                        Mais de 3 vezes por semana
+                    </label>
+                </div>
+
+                <div class="questions three">
+                    <h2>
+                        <div class="box-description-risk-2"></div>
+                    </h2>
+                    <p>Selecione uma opção de secagem, em seguida clique em Avançar.</p>
+
+                    <div class="wash-hair">
+                        <span>Seca</span>
+                        <img src="./images/secador-de-cabelo.svg" alt="seca cabelo">
+                    </div>
+
+                    <label class="text-check" for="question-8">
+                        <input type="radio" id="question-8" name="seca cabelo">
+                        Sempre
+                        <span class="checking"></span>
+                    </label>
+
+                    <label class="text-check" for="question-9">
+                        <input type="radio" id="question-9" name="seca cabelo">
+                        As vezes
+                        <span class="checking"></span>
+                    </label>
+
+                    <label class="text-check" for="question-10">
+                        <input type="radio" id="question-10" name="seca cabelo">
+                        <span class="checking"></span>
+                        Nunca (seca ao ar livre)
+                    </label>
+                </div>
+
+                <div class="box-button">
+                    <button id="submit2">Avançar</button>
+                </div>
+
+            </section>
+
+            <section class="container" id="question_3">
+                <div class="questions four">
+                    <h2 class="flex-h2">
+                        3. Fez alguns desses procedimentos nos últimos 30 dias?
+                        <div class="box-description-risk-2"></div>
+                    </h2>
+                    <p>Selecione uma ou mais opções, em seguida clique em Avançar.</p>
+
+                    <label class="text-check flex-checkbox" for="question-11">
+                        <input type="checkbox" id="question-11"  name="hidratacao">
+                        Hidratação
+                        <span class="checking"></span>
+                    </label>
+
+                    <label class="text-check flex-checkbox" for="question-12">
+                        <input type="checkbox" id="question-12"  name="pintura">
+                        Pintura
+                        <span class="checking"></span>
+                    </label>
+
+                    <label class="text-check flex-checkbox" for="question-13">
+                        <input type="checkbox" id="question-13" name="mechas">
+                        Mechas
+                        <span class="checking"></span>
+                    </label>
+
+                    <label class="text-check flex-checkbox" for="question-14">
+                        <input type="checkbox" id="question-14"  name="corte">
+                        Corte
+                        <span class="checking"></span>
+                    </label>
+
+                    <label class="text-check flex-checkbox" for="question-15">
+                        <input type="checkbox" id="question-15"  name="outros 1">
+                        outros 1
+                        <span class="checking"></span>
+                    </label>
+
+                    <label class="text-check flex-checkbox" for="question-16">
+                        <input type="checkbox" id="question-16"  name="outros 2">
+                        outros 2
+                        <span class="checking"></span>
+                    </label>
+                </div>
+
+                <div class="box-button">
+                    <button id="submit3">Avançar</button>
+                </div>
+
+            </section>
+
+            <section class="container" id="question_4">
+                <div class="questions five">
+                    <h2 class="flex-h2">
+                        4. Qual o resultado desejado?
+                        <div class="box-description-risk-2"></div>
+                    </h2>
+                    <p>Selecione uma ou mais opções, em seguida clique em Avançar.</p>
+
+                    <label class="text-check flex-checkbox" for="question-17">
+                        <input type="checkbox" id="question-17"  name="brilho">
+                        Brilho
+                        <span class="checking"></span>
+                    </label>
+
+                    <label class="text-check flex-checkbox" for="question-18">
+                        <input type="checkbox" id="question-18"  name="maciez">
+                        Maciez
+                        <span class="checking"></span>
+                    </label>
+
+                    <label class="text-check flex-checkbox" for="question-19">
+                        <input type="checkbox" id="question-19"  name="reacar cor">
+                        Realçar Cor
+                        <span class="checking"></span>
+                    </label>
+
+                    <label class="text-check flex-checkbox" for="question-20">
+                        <input type="checkbox" id="question-20"  name="volume">
+                        Volume
+                        <span class="checking"></span>
+                    </label>
+                </div>
+
+                <div class="box-button">
+                    <button id="submit4">Avançar</button>
+                </div>
+
+            </section>
+
+        </form>
+
+    </main>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
