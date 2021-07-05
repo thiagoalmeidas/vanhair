@@ -85,10 +85,25 @@
                 </div>
             </div>
 
-            <div class="box-button">
-                <button id="submit0">Ok, Vamos lá!</button>
-                <a href="#">ou ir para Produtos</a>
+            <!--Button next arrow-->
+            <div class="btn-container">
+                <button id="submit0">
+                    <span class="text">Começar</span>
+                    <div class="icon-container">
+                        <div class="icon icon--left">
+                            <svg>
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </div>
+                        <div class="icon icon--right">
+                            <svg>
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </button>
             </div>
+            <!--Final Button next arrow-->
         </section>
 
         <form action="" id="questions"></form>
@@ -100,39 +115,56 @@
                         <div class="box-description-risk-2"></div>
                     </h2>
                     <p>Selecione uma das opções, em seguida clique em Avançar.</p>
+                    <div class="flexCenter">
+                    
+                        <label class="container-check" for="question-1a">
+                            <img src="./images/tipo-de-cabelo-crespo-vanhair.svg" alt="Cabelo Crespo">
+                            <input type="radio" id="question-1a" name="tipo de cabelo">
+                            <span class="check"></span>
+                            Crespo
+                        </label>
 
-                    <label class="container-check" for="question-1a">
-                        <img src="./images/tipo-de-cabelo-crespo-vanhair.svg" alt="Cabelo Crespo">
-                        <input type="radio" id="question-1a" name="tipo de cabelo">
-                        <span class="check"></span>
-                        Crespo
-                    </label>
+                        <label class="container-check" for="question-2">
+                            <img src="./images/tipo-de-cabelo-enrolado-vanhair.svg" alt="Cabelo Cacheado">
+                            <input type="radio" id="question-2" name="tipo de cabelo">
+                            <span class="check"></span>
+                            Cacheado
+                        </label>
 
-                    <label class="container-check" for="question-2">
-                        <img src="./images/tipo-de-cabelo-enrolado-vanhair.svg" alt="Cabelo Cacheado">
-                        <input type="radio" id="question-2" name="tipo de cabelo">
-                        <span class="check"></span>
-                        Cacheado
-                    </label>
+                        <label class="container-check" for="question-3">
+                            <img src="./images/tipo-de-cabelo-ondulado-vanhair.svg" alt="Cabelo Ondulado">
+                            <input type="radio" id="question-3"  name="tipo de cabelo">
+                            <span class="check"></span>
+                            Ondulado
+                        </label>
 
-                    <label class="container-check" for="question-3">
-                        <img src="./images/tipo-de-cabelo-ondulado-vanhair.svg" alt="Cabelo Ondulado">
-                        <input type="radio" id="question-3"  name="tipo de cabelo">
-                        <span class="check"></span>
-                        Ondulado
-                    </label>
-
-                    <label class="container-check" for="question-4">
-                        <img src="./images/tipo-de-cabelo-liso-vanhair.svg" alt="Cabelo Liso">
-                        <input type="radio" id="question-4"  name="tipo de cabelo">
-                        <span class="check"></span>
-                        Liso
-                    </label>
+                        <label class="container-check" for="question-4">
+                            <img src="./images/tipo-de-cabelo-liso-vanhair.svg" alt="Cabelo Liso">
+                            <input type="radio" id="question-4"  name="tipo de cabelo">
+                            <span class="check"></span>
+                            Liso
+                        </label>
+                    </div>
                 </div>
-
-                <div class="box-button">
-                    <button id="submit1">1/4 ---- Avançar</button>
+                <!--Button next arrow-->
+                <div class="btn-container">
+                    <button id="submit1">
+                        <span class="text">Avançar</span>
+                        <div class="icon-container">
+                            <div class="icon icon--left">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="icon icon--right">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
                 </div>
+                <!--Final Button next arrow-->
 
             </section>
 
@@ -143,28 +175,31 @@
                     </h2>
                     <p>Selecione uma opção de lavagem.</p>
 
-                    <div class="wash-hair">
-                        <span>Lava</span>
-                        <img src="./images/shower-lavar-vanessa-leme.svg" alt="lava cabelo">
+                    <div class="flexCenter">
+
+                        <div class="wash-hair">
+                            <span>Lava</span>
+                            <img src="./images/shower-lavar-vanessa-leme.svg" alt="lava cabelo">
+                        </div>
+
+                        <label class="text-check flex-checkbox" for="question-5">
+                            <input type="radio" id="question-5" name="lava cabelo">
+                            Menos de 3 vezes por semana
+                            <span class="checking"></span>
+                        </label>
+
+                        <label class="text-check flex-checkbox" for="question-6">
+                            <input type="radio" id="question-6" name="lava cabelo">
+                            3 vezes por semana
+                            <span class="checking"></span>
+                        </label>
+
+                        <label class="text-check flex-checkbox" for="question-7">
+                            <input type="radio" id="question-7" name="lava cabelo">
+                            <span class="checking"></span>
+                            Mais de 3 vezes por semana
+                        </label>
                     </div>
-
-                    <label class="text-check" for="question-5">
-                        <input type="radio" id="question-5" name="lava cabelo">
-                        Menos de 3 vezes por semana
-                        <span class="checking"></span>
-                    </label>
-
-                    <label class="text-check" for="question-6">
-                        <input type="radio" id="question-6" name="lava cabelo">
-                        3 vezes por semana
-                        <span class="checking"></span>
-                    </label>
-
-                    <label class="text-check" for="question-7">
-                        <input type="radio" id="question-7" name="lava cabelo">
-                        <span class="checking"></span>
-                        Mais de 3 vezes por semana
-                    </label>
                 </div>
 
                 <div class="questions three">
@@ -173,33 +208,52 @@
                     </h2>
                     <p>Selecione uma opção de secagem, em seguida clique em Avançar.</p>
 
-                    <div class="wash-hair">
-                        <span>Seca</span>
-                        <img src="./images/secador-de-cabelo.svg" alt="seca cabelo">
+                    <div class="flexCenter">
+                      
+                        <div class="wash-hair">
+                                <span>Seca</span>
+                                <img src="./images/secador-de-cabelo.svg" alt="seca cabelo">
+                            </div>
+
+                            <label class="text-check flex-checkbox" for="question-8">
+                                <input type="radio" id="question-8" name="seca cabelo">
+                                Sempre
+                                <span class="checking"></span>
+                            </label>
+
+                            <label class="text-check flex-checkbox" for="question-9">
+                                <input type="radio" id="question-9" name="seca cabelo">
+                                As vezes
+                                <span class="checking"></span>
+                            </label>
+
+                            <label class="text-check flex-checkbox" for="question-10">
+                                <input type="radio" id="question-10" name="seca cabelo">
+                                <span class="checking"></span>
+                                Nunca (seca ao ar livre)
+                            </label>
+                        </div>  
                     </div>
 
-                    <label class="text-check" for="question-8">
-                        <input type="radio" id="question-8" name="seca cabelo">
-                        Sempre
-                        <span class="checking"></span>
-                    </label>
-
-                    <label class="text-check" for="question-9">
-                        <input type="radio" id="question-9" name="seca cabelo">
-                        As vezes
-                        <span class="checking"></span>
-                    </label>
-
-                    <label class="text-check" for="question-10">
-                        <input type="radio" id="question-10" name="seca cabelo">
-                        <span class="checking"></span>
-                        Nunca (seca ao ar livre)
-                    </label>
+                <!--Button next arrow-->
+                <div class="btn-container">
+                    <button id="submit2">
+                        <span class="text">Avançar</span>
+                        <div class="icon-container">
+                            <div class="icon icon--left">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="icon icon--right">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
                 </div>
-
-                <div class="box-button">
-                    <button id="submit2">Avançar</button>
-                </div>
+                <!--Final Button next arrow-->
             </section>
 
             <section class="container" id="question_3">
@@ -210,84 +264,124 @@
                     </h2>
                     <p>Selecione uma ou mais opções, em seguida clique em Avançar.</p>
 
-                    <label class="text-check flex-checkbox" for="question-11">
-                        <input type="checkbox" id="question-11"  name="hidratacao">
-                        Hidratação
-                        <span class="checking"></span>
-                    </label>
+                    <div class="flexCenter">
 
-                    <label class="text-check flex-checkbox" for="question-12">
-                        <input type="checkbox" id="question-12"  name="pintura">
-                        Pintura
-                        <span class="checking"></span>
-                    </label>
+                        <label class="text-check flex-checkbox" for="question-11">
+                            <input type="checkbox" id="question-11"  name="hidratacao">
+                            Hidratação
+                            <span class="checking"></span>
+                        </label>
 
-                    <label class="text-check flex-checkbox" for="question-13">
-                        <input type="checkbox" id="question-13" name="mechas">
-                        Mechas
-                        <span class="checking"></span>
-                    </label>
+                        <label class="text-check flex-checkbox" for="question-12">
+                            <input type="checkbox" id="question-12"  name="pintura">
+                            Pintura
+                            <span class="checking"></span>
+                        </label>
 
-                    <label class="text-check flex-checkbox" for="question-14">
-                        <input type="checkbox" id="question-14"  name="corte">
-                        Corte
-                        <span class="checking"></span>
-                    </label>
+                        <label class="text-check flex-checkbox" for="question-13">
+                            <input type="checkbox" id="question-13" name="mechas">
+                            Mechas
+                            <span class="checking"></span>
+                        </label>
 
-                    <label class="text-check flex-checkbox" for="question-15">
-                        <input type="checkbox" id="question-15"  name="outros 1">
-                        outros 1
-                        <span class="checking"></span>
-                    </label>
+                        <label class="text-check flex-checkbox" for="question-14">
+                            <input type="checkbox" id="question-14"  name="corte">
+                            Corte
+                            <span class="checking"></span>
+                        </label>
 
-                    <label class="text-check flex-checkbox" for="question-16">
-                        <input type="checkbox" id="question-16"  name="outros 2">
-                        outros 2
-                        <span class="checking"></span>
-                    </label>
+                        <label class="text-check flex-checkbox" for="question-15">
+                            <input type="checkbox" id="question-15"  name="outros 1">
+                            outros 1
+                            <span class="checking"></span>
+                        </label>
+
+                        <label class="text-check flex-checkbox" for="question-16">
+                            <input type="checkbox" id="question-16"  name="outros 2">
+                            outros 2
+                            <span class="checking"></span>
+                        </label>
+                    </div>
+
                 </div>
 
-                <div class="box-button">
-                    <button id="submit3">Avançar</button>
+                <!--Button next arrow-->
+                <div class="btn-container">
+                    <button id="submit3">
+                        <span class="text">Avançar</span>
+                        <div class="icon-container">
+                            <div class="icon icon--left">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="icon icon--right">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
                 </div>
+                <!--Final Button next arrow-->
             </section>
 
             <section class="container" id="question_4">
                 <div class="questions five">
-                    <h2 class="flex-h2">
-                        4. Qual o resultado desejado?
-                        <div class="box-description-risk-2"></div>
-                    </h2>
-                    <p>Selecione uma ou mais opções, em seguida clique em Avançar.</p>
+                    
+                        <h2 class="flex-h2">
+                            4. Qual o resultado desejado?
+                            <div class="box-description-risk-2"></div>
+                        </h2>
+                        <p>Selecione uma ou mais opções, em seguida clique em Finalizar.</p>
 
-                    <label class="text-check flex-checkbox" for="question-17">
-                        <input type="checkbox" id="question-17"  name="brilho">
-                        Brilho
-                        <span class="checking"></span>
-                    </label>
+                        <div class="flexCenter">
 
-                    <label class="text-check flex-checkbox" for="question-18">
-                        <input type="checkbox" id="question-18"  name="maciez">
-                        Maciez
-                        <span class="checking"></span>
-                    </label>
+                            <label class="text-check flex-checkbox" for="question-17">
+                                <input type="checkbox" id="question-17"  name="brilho">
+                                Brilho
+                                <span class="checking"></span>
+                            </label>
 
-                    <label class="text-check flex-checkbox" for="question-19">
-                        <input type="checkbox" id="question-19"  name="reacar cor">
-                        Realçar Cor
-                        <span class="checking"></span>
-                    </label>
+                            <label class="text-check flex-checkbox" for="question-18">
+                                <input type="checkbox" id="question-18"  name="maciez">
+                                Maciez
+                                <span class="checking"></span>
+                            </label>
 
-                    <label class="text-check flex-checkbox" for="question-20">
-                        <input type="checkbox" id="question-20"  name="volume">
-                        Volume
-                        <span class="checking"></span>
-                    </label>
+                            <label class="text-check flex-checkbox" for="question-19">
+                                <input type="checkbox" id="question-19"  name="reacar cor">
+                                Realçar Cor
+                                <span class="checking"></span>
+                            </label>
+
+                            <label class="text-check flex-checkbox" for="question-20">
+                                <input type="checkbox" id="question-20"  name="volume">
+                                Volume
+                                <span class="checking"></span>
+                            </label>
+                        </div>
                 </div>
-
-                <div class="box-button">
-                    <button id="submit4">Avançar</button>
+                <!--Button next arrow-->
+                <div class="btn-container">
+                    <button id="submit4">
+                        <span class="text">Finalizar</span>
+                        <div class="icon-container">
+                            <div class="icon icon--left">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <div class="icon icon--right">
+                                <svg>
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
                 </div>
+                <!--Final Button next arrow-->
+
 
             </section>
 
@@ -296,6 +390,14 @@
     </main>
 
     <script src="scripts.js"></script>
+
+    <!--Arrow Button next -->
+    <svg>
+        <symbol id="arrow-right" viewBox="0 0 20 10">
+            <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
+        </symbol>
+    </svg>
+    <!--Final Arrow Button next -->
 
 </body>
 
