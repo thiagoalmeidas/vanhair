@@ -12,25 +12,25 @@ var idForm4 = document.querySelector('#question_4')
 
 submit0.addEventListener('click', function(){
     idForm0.style.display = 'none';
-    idForm1.style.display = 'flex';      
+    idForm1.style.display = 'flex';
 })
 
 submit1.addEventListener('click', function(){
     idForm1.style.display = 'none';
-    idForm2.style.display = 'flex'   
+    idForm2.style.display = 'flex';
 })
 
 submit2.addEventListener('click', function(){
     idForm2.style.display = 'none';
-    idForm3.style.display = 'flex'   
+    idForm3.style.display = 'flex';
 })
 
 submit3.addEventListener('click', function(){
     idForm3.style.display = 'none';
-    idForm4.style.display = 'flex'   
+    idForm4.style.display = 'flex';
 })
 
 submit4.addEventListener('click', function(){
     idForm4.style.display = 'none';
-    idForm0.style.display = 'flex'   
+    idForm0.style.display = 'flex';
 })

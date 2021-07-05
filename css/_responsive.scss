@@ -1,0 +1,140 @@
+@media (max-width: 600px)  {
+    .bg-page {
+        height: 100%;
+    }
+
+    /*header menu--------------------------*/
+    .menu-rigth {
+        margin-right: 0.5rem;
+
+        ul {
+            margin-top: -1rem;
+            flex-wrap: wrap;
+        }
+
+        li:first-child {
+            display: none;
+        }
+
+        li{
+            padding: 0.5rem;
+            max-width: 60px;
+            font-size: 12px;
+        }
+
+        li:last-child {
+            border-radius: 0px 0px 10px 10px;   
+        }
+    }
+
+    .menu-sandwich {
+        padding: 1rem 1rem;
+    }
+
+    .container {
+        margin-top: 1rem;
+    }
+
+    /*main menu--------------------------*/
+    .apoio {
+        margin-top: 0rem;
+        margin-bottom: 0.6rem;
+        max-width: 150px;
+    }
+
+    /*section inicio--------------------*/
+    .box-description {
+        grid-gap: 1rem;
+        padding: 1rem 1rem;
+
+        h1 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+            line-height: 1.8rem;
+        }
+    } 
+
+    .box-description-risk-1,
+    .box-description-risk-2 {
+        margin-top: 1.1rem;
+        width: 40px;
+        height:3px;
+        background-color: var(--color-link-ligth);
+    }
+
+    .box-description-risk-1 {
+        margin-left: 72%;
+    }
+    
+    .box-description-rigth p{
+        font-size: 1rem;
+    }
+
+    .box-button button{
+        margin: 1rem 0 2rem 0;
+        background:none;
+        padding: 1.1rem 5rem;
+        border: var(--color-link-ligth) 1px solid;
+        border-radius: 6px;
+        color: var(--color-link-white);
+        cursor: pointer;
+        opacity: 0.8;
+        transition:all 0.2s ease-in-out;
+    }
+    
+    /*section questions--------------------*/
+    .questions h1, h2 {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    .container-check {
+        width: 100px;
+        height:125px;
+        margin-right: -4px;
+        padding-top: 10px;
+
+        img{
+            max-height: 80px;
+        }
+    }
+    
+    .check {
+        left: 0;
+        top:0px;
+        width: 100px;
+        height:125px;
+    }
+    
+    /*----------------------------------------*/
+    .text-check {
+        font-size: 13px;
+        padding: 10px;
+        width:80px;
+        height:85px;
+        margin-right: -2px;
+    }
+
+    .checking {
+        border: #ac5fff48 1px solid;
+        width:80px;
+        height:85px;
+    }   
+
+    /*----------------------------------------*/
+    .wash-hair {
+        width: 40px;
+        height: 40px;
+        margin-top: -10px;
+        padding:5px 10px;
+
+        img{
+            max-width: 40px;
+        }
+    }
+}

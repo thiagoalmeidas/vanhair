@@ -1,0 +1,35 @@
+/*Global  -------------------*/
+:root {
+    --color-link-ligth: #ff02fc;
+    --color-link-rox: #8826f4;
+    --color-link-white: #fff;
+}
+
+::-webkit-scrollbar {
+    width:6px;
+    height: 6px;
+}
+     
+::-webkit-scrollbar-track {
+    background:#333;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-link-ligth);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x:hidden;
+}
