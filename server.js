@@ -10,7 +10,7 @@ app.get("/", function(req,res){
 /*app.get("/sobre", function(req,res){
     res.render("about");
 })*/
-var path = require('path')
+const path = require('path')
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(8083)
