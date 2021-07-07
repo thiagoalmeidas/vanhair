@@ -10,6 +10,8 @@ var idForm2 = document.querySelector('#question_2')
 var idForm3 = document.querySelector('#question_3')
 var idForm4 = document.querySelector('#question_4')
 
+
+
 submit0.addEventListener('click', function(){
     idForm0.style.display = 'none';
     idForm1.style.display = 'flex';
