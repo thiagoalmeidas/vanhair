@@ -7,12 +7,12 @@ app.get("/", function(req,res){
     res.render("pages/index");
 })
 
-app.get("/teste", function(req,res){
-    res.render("pages/teste");
+app.get("/home", function(req,res){
+    res.render("pages/home");
 })
 
 const path = require('path')
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(8096)
+app.listen(8103)
 console.log("Rodando")
