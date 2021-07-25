@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     width: 100vw;
     margin: 1rem 0 1rem 0;
-    position: absolute;
+    position: relative;
     z-index: 900;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .bg-video-color {
-    background: #000;
+    background: #0d0034;
     position: absolute;
     z-index: 2;
     top: 0;
