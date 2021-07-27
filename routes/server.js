@@ -11,8 +11,7 @@ app.get("/home", function(req,res){
     res.render("pages/home");
 })
 
-const path = require('path')
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
 app.listen(8106)
 console.log("Rodando")
