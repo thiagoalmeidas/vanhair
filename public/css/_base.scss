@@ -35,6 +35,9 @@ a {
     cursor: pointer;
     text-decoration: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
