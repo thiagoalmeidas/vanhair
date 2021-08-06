@@ -3,8 +3,12 @@
     background-image: url("../images/banner-bg-vanhair-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
     background-position-x: center;
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
 
 /*Main Navigaton-------------------*/
@@ -14,27 +18,30 @@
     margin-top: 2rem;
     opacity: 0.8;
     width: 100vw;
-    margin-bottom: 2rem;   
+    margin-bottom: 2rem;
 }
 
 .container {
     @extend .flexCenter;
-    width:100vw;
+    width: 100vw;
     height: auto;
     flex-direction: column;
     margin-top: 3rem;
+    position: absolute;
+    z-index: 200;
 }
 
 /*Inicio das perguntas---------------*/
 .box-description {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 700px;
     grid-gap: 3rem;
     /*border: #ff02fb1e 1px solid;*/
     padding: 2rem 0;
 
-    h1, h2 {
+    h1,
+    h2 {
         font-size: 1.3rem;
         font-weight: 500;
         margin-bottom: 1rem;
@@ -44,7 +51,7 @@
     p {
         font-size: 1.5rem;
         font-weight: 600;
-        color:var(--color-link-rox);
+        color: var(--color-link-rox);
         /*border-bottom: #ff02fc 3px solid;*/
         letter-spacing: 1px;
         line-height: 2rem;
@@ -55,7 +62,7 @@
 .box-description-risk-2 {
     margin-top: 1.5rem;
     width: 40px;
-    height:3px;
+    height: 3px;
     background-color: var(--color-link-ligth);
 }
 
@@ -66,7 +73,7 @@
 .box-description-rigth {
     text-align: left;
 
-    p{
+    p {
         font-weight: 200;
         color: #ddbdff;
         font-size: 1.2rem;
@@ -77,51 +84,16 @@
     text-align: right;
 }
 
-/*.box-button {
-    button{
-        margin: 2rem 0;
-        background:none;
-        padding: 1.1rem 4rem;
-        border: var(--color-link-ligth) 1px solid;
-        border-radius: 6px;
-        color: var(--color-link-white);
-        cursor: pointer;
-        opacity: 0.8;
-        transition:all 0.2s ease-in-out;
-
-        &:hover{
-            box-shadow: 0px 0px 5px var(--color-link-ligth);
-            opacity: 1;
-            transition:all 0.2s ease-in-out;
-            }
-        }
-
-
-    a{
-        display: block;
-        font-size: 13px;
-        color: var(--color-link-white);
-        opacity: 0.5;
-        text-align: center;
-        transition:all 0.4s ease-in-out;
-
-        &:hover{
-            opacity: 1;
-            transition:all 0.2s ease-in-out;
-        }
-    }
-    
-}*/
-
 /*Questions ---------------------------*/
 .questions {
-    margin:0 2rem ;
+    margin: 0 2rem;
 
     .four {
         max-width: 600px;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
         font-size: 1.3rem;
         font-weight: 500;
         margin: 2rem 0;
@@ -132,18 +104,25 @@
     p {
         font-size: 14px;
         font-weight: 300;
-        color:var(--color-link-rox);
+        color: var(--color-link-rox);
         letter-spacing: 1px;
         line-height: 1.2rem;
         text-align: left;
         margin-bottom: 1rem;
     }
-    
 }
 
+.question-show {
+    left: 0;
+    opacity: 1;
+    transition: 0.4s;
+}
 
-#question_1, #question_2, #question_3, #question_4{
-    display: none;
+.question-hidden {
+    left: -100%;
+    opacity: 0;
+    transition: 0.4s;
+    
 }
 
 .flex-h2 {
@@ -151,28 +130,27 @@
 }
 
 .container-check {
-
     position: relative;
     cursor: pointer;
     font-size: 16px;
     color: #e7d4fc;
-    width: 150px;
-    height:210px;
+    width: 140px;
+    height: 210px;
     text-align: center;
     margin-right: 4px;
     padding-top: 18px;
-    transition:all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
         border: #ff0281 1px solid;
-        transition:all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
     }
 
-    img{
-        max-height: 150px;
+    img {
+        max-height: 140px;
     }
 
-    input{
+    input {
         position: absolute;
         opacity: 0;
         cursor: pointer;
@@ -181,12 +159,12 @@
 
 .check {
     left: 0;
-    top:0px;
-    width: 150px;
-    height:210px;
-    position:absolute;
+    top: 0px;
+    width: 140px;
+    height: 210px;
+    position: absolute;
     border: #8a26f448 1px solid;
-    transition:all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     &:after {
         content: "";
@@ -195,23 +173,21 @@
     }
 }
 
-.container-check input:checked ~ .check{
+.container-check input:checked ~ .check {
     border: #ff0281 3px solid;
 }
 
 .container-check .check:after {
-    top:5px;
-    right:9px;
-    width:5px;
-    height:10px;
+    top: 5px;
+    right: 9px;
+    width: 5px;
+    height: 10px;
     border: solid #ff0281;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
-
 }
 
-
-.container-check input:checked ~ .check:after{
+.container-check input:checked ~ .check:after {
     display: block;
 }
 
@@ -226,27 +202,26 @@
     text-align: center;
     vertical-align: middle;
     padding: 18px;
-    width:120px;
-    height:90px;
+    width: 120px;
+    height: 90px;
     margin-right: 4px;
 
     &:hover {
         border: #ff0281 1px solid;
     }
 
-    input{
+    input {
         position: absolute;
         opacity: 0;
         cursor: pointer;
     }
 
-    input:checked ~ .checking{
+    input:checked ~ .checking {
         border: #ff0281 3px solid;
     }
 }
 
-
-.flex-checkbox{
+.flex-checkbox {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -255,13 +230,13 @@
 
 .checking {
     left: 0;
-    top:0px;
+    top: 0px;
     padding: 18px;
-    position:absolute;
+    position: absolute;
     border: #9992a133 1px solid;
-    transition:all 0.3s ease-in-out;
-    width:120px;
-    height:90px;
+    transition: all 0.3s ease-in-out;
+    width: 120px;
+    height: 90px;
 }
 
 /*----------------------------------------*/
@@ -269,21 +244,18 @@
 .wash-hair {
     display: inline-block;
     vertical-align: middle;
-    color:var(--color-link-rox);
+    color: var(--color-link-rox);
     width: 70px;
     height: 80px;
     text-align: center;
-    margin-right:20px;
-    /*border: #9992a133 1px solid;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;*/
+    margin-right: 20px;
 
-    img{
+    img {
         margin-top: 6px;
         max-width: 40px;
     }
 
-    span{
+    span {
         padding-bottom: 0px;
     }
 }
