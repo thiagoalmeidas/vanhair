@@ -24,9 +24,9 @@
 .container {
     @extend .flexCenter;
     width: 100vw;
-    height: auto;
+    height: 90vh;
     flex-direction: column;
-    margin-top: 3rem;
+    top: 10vh;
     position: absolute;
     z-index: 200;
 }
@@ -86,7 +86,7 @@
 
 /*Questions ---------------------------*/
 .questions {
-    margin: 0 2rem;
+    padding: 0 2rem;
 
     .four {
         max-width: 600px;
@@ -103,7 +103,7 @@
 
     p {
         font-size: 14px;
-        font-weight: 300;
+        font-weight: 500;
         color: var(--color-link-rox);
         letter-spacing: 1px;
         line-height: 1.2rem;

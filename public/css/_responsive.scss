@@ -82,7 +82,7 @@
         border-radius: 8px;
         color: var(--color-link-white);
         cursor: pointer;
-        opacity: 0.8;
+        opacity: 0.9;
         transition:all 0.2s ease-in-out;
     }
     
@@ -147,4 +147,10 @@
             max-width: 40px;
         }
     }
+}
+@media (max-width: 360px)  {
+    .wash-hair {
+        display: none;
+    }
+    
 }
