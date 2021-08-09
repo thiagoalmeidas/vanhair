@@ -120,24 +120,137 @@
 		gap: 1rem;
 		box-shadow: 0 0 0.5em #260052;
 	}
+
 	li{
 		color: #fff;
 		margin-top: 30px;
 		width: 30px;
+		
 	}
+
 	li a{
 		cursor: pointer;
 		display:block;
+		transition: transform 0.3s;
+ 		transform: translateX(0) scale(1.0);
 	}
-	li a:hover{
-		background: #fff;
 
-		z-index: 999;
+	li a:hover{
+		transform: translateX(1rem) scale(1.5);
 	}
+
 	@media (max-width: 800px)  {
 		display: none;
 		li{
 			margin-top: 20px;
 		}
 	}
+}
+/*Menu Header Sandwich -------------------*/
+.menu-sandwich {
+    padding: 1.1rem 1.1rem;
+    /*min-width: 30%;*/
+}
+
+/*Desenho Menu Sandwich--------------------------*/
+.menu-sandwich-bt  {
+    display: block;
+    background: var(--color-link-ligth);
+    width: 25px;
+    height:3px;
+    border-radius: 10px;
+    position:relative;
+    cursor: pointer;  
+    transition: .3s ease-in-out; 
+    box-shadow: 0 0 0 0 var(--color-link-rox), 0 0 0 0 var(--color-link-rox); 
+
+        &:after,
+        &:before  {
+            background: var(--color-link-ligth);
+            content: '';   
+            position: absolute;
+            width: 100%;
+            height:100%;
+            transition: .3s ease-in-out;
+            border-radius: 10px;     
+        }
+
+        &:before  {
+            top: -10px;
+            width: 35px;     
+        }
+
+        &:after  {
+            bottom: -10px;
+            width: 5px;
+        }
+
+        input:checked ~ label & {
+            transform: rotate(45deg);
+            width: 35px;
+            background: var(--color-link-rox);
+        }
+        
+        input:checked ~ label &:before {
+            transform: rotate(90deg);
+            top:0;
+            background: var(--color-link-rox);
+        }
+        
+        input:checked ~ label &:after {
+            transform: rotate(90deg);
+            bottom:0;
+            width: 35px;
+            background: var(--color-link-rox);
+        }
+        
+        input:checked ~ label & {
+            box-shadow: 0 0 0 110vw var(--color-link-ligth), 0 0 0 110vh var(--color-link-ligth);
+            z-index: 994;
+			transition:  0.2s;
+        }
+}
+
+#menu-sandwich-check {
+    display: none; 
+}
+
+
+
+/*Acao ao clicar no Menu Sandwich--------------------------*/
+.menu-sandwich-active {
+    @extend .flexCenter;
+    position: absolute;
+    width: 92%;
+    margin-top: 10vh;
+    z-index: 995;
+    text-align: center;
+	transition: 0.3s ease-in-out;
+
+    ul{
+        list-style: none;
+        opacity: 0;
+		display: none;
+    }
+
+    input:checked ~ & ul {
+        opacity: 1;
+		transition: 0.3s;
+		display: block;
+    }
+
+    ul li{
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-variant: small-caps;
+    }
+
+    li a{
+        color:#230841;
+        opacity: 0.7;
+    }
+
+    li a:hover{
+        opacity: 1;
+    }
 }
