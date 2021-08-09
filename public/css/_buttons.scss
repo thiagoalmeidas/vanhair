@@ -215,8 +215,6 @@
     display: none; 
 }
 
-
-
 /*Acao ao clicar no Menu Sandwich--------------------------*/
 .menu-sandwich-active {
     @extend .flexCenter;
@@ -254,3 +252,58 @@
         opacity: 1;
     }
 }
+
+/*Acao ao clicar no Menu Sandwich teste--------------------------*/
+.menu-lateral-fixed {
+	display: inline-flex;
+  }
+  
+  .menu-lateral-fixed .icon {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .menu-lateral-fixed .tooltip {
+	position: absolute;
+	left: 0;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 10px;
+	border-radius: 4px;
+	min-width: 200px;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .menu-lateral-fixed .tooltip::before {
+	position: absolute;
+	content: "";
+	height: 8px;
+	width: 8px;
+	bottom: -30px;
+	right: 50%;
+	transform: translate(-50%) rotate(45deg);
+	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .menu-lateral-fixed .icon:hover .tooltip {
+	left: 65px;
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+  }
+  
+  
+
+  .menu-lateral-fixed .facebook:hover .tooltip {
+	background-color: var(--color-link-rox);
+	color: var(--color-link-white);
+
+  }
