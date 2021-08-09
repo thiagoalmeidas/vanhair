@@ -15,5 +15,5 @@ app.use(express.static('public'));
 app.use(routes)
 
 
-app.listen(8106)
+app.listen(8080)
 console.log("Rodando")
