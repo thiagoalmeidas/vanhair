@@ -111,7 +111,7 @@
     border-radius: 10px;
     position:relative;
     cursor: pointer;  
-    transition: .3s ease-in-out; 
+    transition: 0.3s ease-in-out; 
     box-shadow: 0 0 0 0 var(--color-link-rox), 0 0 0 0 var(--color-link-rox); 
 
         &:after,
@@ -121,7 +121,7 @@
             position: absolute;
             width: 100%;
             height:100%;
-            transition: .3s ease-in-out;
+            transition: 0.3s ease-in-out;
             border-radius: 10px;     
         }
 
