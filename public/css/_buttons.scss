@@ -96,56 +96,6 @@
 	}
 }
 
-.menu-lateral-fixed{
-	display: flex;
-	position: absolute;
-	top: 0;
-	left:0;
-	opacity:1;
-	height:100vh;
-	z-index: 998;
-	transition: 0.2s;
-	
-	
-	ul{
-		display: flex;
-		list-style: none;
-		background: linear-gradient(10deg, #380079 0%, #260052 100%);
-	    width: 60px;
-		height: auto;
-		flex-direction: column;
-		justify-content: center;
-		align-content: center;
-		align-items: center;
-		gap: 1rem;
-		box-shadow: 0 0 0.5em #260052;
-	}
-
-	li{
-		color: #fff;
-		margin-top: 30px;
-		width: 30px;
-		
-	}
-
-	li a{
-		cursor: pointer;
-		display:block;
-		transition: transform 0.3s;
- 		transform: translateX(0) scale(1.0);
-	}
-
-	li a:hover{
-		transform: translateX(1rem) scale(1.5);
-	}
-
-	@media (max-width: 800px)  {
-		display: none;
-		li{
-			margin-top: 20px;
-		}
-	}
-}
 /*Menu Header Sandwich -------------------*/
 .menu-sandwich {
     padding: 1.1rem 1.1rem;
@@ -253,15 +203,60 @@
     }
 }
 
-/*Acao ao clicar no Menu Sandwich teste--------------------------*/
-.menu-lateral-fixed {
-	display: inline-flex;
-  }
-  
-  .menu-lateral-fixed .icon {
+/*--------Menu Lateral-------------------------*/
+.menu-lateral-fixed{
+	display: flex;
+	position: absolute;
+	top: 0;
+	left:0;
+	opacity:1;
+	height:100vh;
+	z-index: 998;
+	transition: 0.2s;
+	
+	
+	ul{
+		display: flex;
+		list-style: none;
+		background: linear-gradient(10deg, #380079 0%, #260052 100%);
+	    width: 60px;
+		height: auto;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		gap: 1rem;
+		box-shadow: 0 0 0.5em #260052;
+	}
+
+	li{
+		color: #fff;
+		margin-top: 30px;
+		width: 30px;
+		
+	}
+
+	li a{
+		cursor: pointer;
+		display:block;
+		transition: transform 0.3s;
+ 		transform: translateX(0) scale(1.0);
+	}
+
+	li a:hover{
+		transform: translateX(1rem) scale(1.5);
+	}
+
+	@media (max-width: 800px)  {
+		display: none;
+		li{
+			margin-top: 20px;
+		}
+	}
+}
+/*Acao ao clicar no Menu Lateral-------------------------*/
+.menu-lateral-fixed .icon {
 	position: relative;
-	width: 30px;
-	height: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -273,24 +268,19 @@
 	position: absolute;
 	left: 0;
 	font-size: 14px;
-	color: #ffffff;
+	color: var(--color-link-white);
 	padding: 10px 10px;
 	border-radius: 4px;
 	min-width: 200px;
 	opacity: 0;
 	pointer-events: none;
 	transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .menu-lateral-fixed .tooltip::before {
-	position: absolute;
-	content: "";
-	height: 8px;
-	width: 8px;
-	bottom: -30px;
-	right: 50%;
-	transform: translate(-50%) rotate(45deg);
-	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+	h2{
+		font-size: 1.1rem;
+		margin-top: 5px;
+		letter-spacing: 1px;
+	}
   }
   
   .menu-lateral-fixed .icon:hover .tooltip {
@@ -300,10 +290,8 @@
 	pointer-events: auto;
   }
   
-  
-
-  .menu-lateral-fixed .facebook:hover .tooltip {
-	background-color: var(--color-link-rox);
+  .menu-lateral-fixed .dics:hover .tooltip {
+	//background-color: var(--color-link-rox);
+	//background: linear-gradient(10deg, #380079 0%, #260052 100%);
 	color: var(--color-link-white);
-
   }
